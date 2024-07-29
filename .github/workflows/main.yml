@@ -17,12 +17,12 @@ jobs:
       - name: redoc-cli test
         uses: ./ # Uses an action in the root directory
         with:
-          args: 'bundle test/petstore.yml -o petstore.html'
+          args: 'bundle test/ApiNexaTelemetry.openapi.yaml -o nexa.html'
 
       - name: check result
         run: |
           ls -al
-          test -f petstore.html || (echo "Missing petstore.html from previous step." && exit 1)
+          test -f nexa.html || (echo "Missing nexa.html from previous step." && exit 1)
 
   test_job_2:
     runs-on: ubuntu-latest
@@ -35,9 +35,9 @@ jobs:
       - name: redoc-cli test
         uses: seeebiii/redoc-cli-github-action@v10
         with:
-          args: 'bundle test/petstore.yml -o petstore.html'
+          args: 'bundle test/ApiNexaTelemetry.openapi.yaml -o nexa.html'
 
       - name: check result
         run: |
           ls -al
-          test -f petstore.html || (echo "Missing petstore.html from previous step." && exit 1)
+          test -f nexa.html || (echo "Missing nexa.html from previous step." && exit 1)
