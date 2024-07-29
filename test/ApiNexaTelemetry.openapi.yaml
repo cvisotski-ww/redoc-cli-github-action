@@ -1,6 +1,6 @@
 openapi: 3.0.1
 info:
-  title: Api Nexa Telemetry
+  title: Api Nexa Telemetrys
   description: ''
   version: '1.0'
 servers:
