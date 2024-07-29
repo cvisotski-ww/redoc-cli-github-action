@@ -1,5 +1,5 @@
 name: 'redoc-cli-github-action'
-description: 'Lets you use redoc-cli for generating REST API docs of your OpenAPI documents.'
+description: 'Lets you  use redoc-cli for generating REST API docs of your OpenAPI documents.'
 author: 'Sebastian Hesse <info@sebastianhesse.de>'
 branding:
   icon: 'book'
